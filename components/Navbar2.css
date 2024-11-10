@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: #ffffff;
+    color: white;
+  }
+  
+  .logo { 
+    width: 20px;
+    height: auto;
+    margin-right: 100px; /* Adjust spacing between logos */
+  }
+  
+  .logo-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .logo-button:focus {
+    outline: none;
+  }

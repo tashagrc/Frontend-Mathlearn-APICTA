@@ -1,0 +1,31 @@
+/* App.css */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  @keyframes throw-animation {
+    0% {
+      transform: translateX(0) translateY(0) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(100px) translateY(-50px) scale(1.2);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(200px) translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .box {
+    transition: transform 0.2s ease;
+  }
+  
+  
+  

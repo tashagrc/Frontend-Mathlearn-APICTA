@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  mathlearns-service-backend-dev:
+    container_name: mathlearns-service-backend-dev
+    image: prambudi/mathlearns-service-backend-develop:0.1.0
+    build: ./
+    ports:
+      - '8080:8080'
+    networks:
+      - mathlearns-proyek-skripsi_default
+
+networks:
+  mathlearns-proyek-skripsi_default:
+    external: true

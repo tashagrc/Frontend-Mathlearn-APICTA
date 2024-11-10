@@ -1,0 +1,176 @@
+#editor .ql-editor {
+  text-align: justify !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: stretch;
+  cursor: text;
+  min-height: 400px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Roboto";
+  margin-top: 15px;
+  color: black;
+}
+
+#editor .ql-editor h1,
+#editor .ql-editor h2,
+#editor .ql-editor h3,
+#editor .ql-editor h4,
+#editor .ql-editor h5,
+#editor .ql-editor h6 {
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ql-editor::placeholder {
+  color: #ffffff !important;
+}
+
+.ql-formula {
+  display: inline-flex;
+  padding: 10px;
+  padding-top: 10px;
+}
+
+#editor .ql-editor .ql-formula:hover {
+  background-color: rgba(255, 166, 0, 0.5);
+}
+
+.ql-formula:hover {
+  cursor: pointer;
+  border: #bbb dashed 2px;
+}
+
+.ql-editor.dimmed {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ql-formula.clicked {
+  border: 2px solid red;
+  background-color: rgba(255, 166, 0, 0.5);
+}
+
+.ql-editor .ql-video {
+  max-width: 900px !important;
+  min-height: 500px !important;
+}
+
+.ql-image.align-left {
+  float: left;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.ql-image.align-right {
+  float: right;
+  margin-left: 10px; /* Adjust as needed */
+}
+
+.ql-image.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* }///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////{ */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#h3 {
+  color: white;
+}
+
+#ring {
+  width: 290px;
+  height: 290px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#ring:nth-child(1) {
+  border-bottom: 8px solid rgb(255, 141, 249);
+  animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(50deg) rotateZ(110deg);
+  }
+
+  to {
+    transform: rotateX(50deg) rotateZ(470deg);
+  }
+}
+
+#ring:nth-child(2) {
+  border-bottom: 8px solid rgb(255, 65, 106);
+  animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+  }
+
+  to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+  }
+}
+
+#ring:nth-child(3) {
+  border-bottom: 8px solid rgb(0, 255, 255);
+  animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+
+  to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+  }
+}
+
+#ring:nth-child(4) {
+  border-bottom: 8px solid rgb(252, 183, 55);
+  animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotateX(70deg) rotateZ(270deg);
+  }
+
+  to {
+    transform: rotateX(70deg) rotateZ(630deg);
+  }
+}
